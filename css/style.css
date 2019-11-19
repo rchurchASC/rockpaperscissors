@@ -7,3 +7,15 @@
   justify-content:space-between;
   
 }
+.rockBeatsScissors{
+    display:none;
+    width:20%;
+}
+.rockLosesPaper{
+    display:none;
+    width:20%;
+}
+.rockTie{
+    display:none;
+    width:20%;
+}
