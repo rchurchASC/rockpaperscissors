@@ -25,7 +25,8 @@ $("#shoot").click(function(){
         $("#result").text("You lose");
     }
     if($("#userChoice").text() === "paper" && $("#computerChoice").text() === "rock"){
-        
+        $(".rockLosesPaper").show();
+        $("#result").text("You win");
     }
 });
 
