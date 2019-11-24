@@ -19,3 +19,15 @@
     display:none;
     width:20%;
 }
+.scissorsBeatsPaper{
+    display: none;
+    width: 20%;
+}
+.scissorsTie{
+    display: none;
+    width: 20%;
+}
+.paperTie{
+    display: none;
+    width: 20%;
+}

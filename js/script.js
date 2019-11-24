@@ -20,13 +20,27 @@ $("#shoot").click(function(){
     }else if ($("#userChoice").text() === "rock" && $("#computerChoice").text() === "rock") {
         $(".rockTie").show();
         $("#result").text("Issa tie");
-    }else{
+    }else if($("#userChoice").text() === "rock" && $("#computerChoice").text() === "paper"){
         $(".rockLosesPaper").show();
         $("#result").text("You lose");
-    }
-    if($("#userChoice").text() === "paper" && $("#computerChoice").text() === "rock"){
+    }else if($("#userChoice").text() === "paper" && $("#computerChoice").text() === "scissors"){
+        $(".scissorsBeatsPaper").show();
+        $("#result").text("You lose");
+    }else if($("#userChoice").text() === "paper" && $("#computerChoice").text() === "paper"){
+        $(".paperTie").show();
+        $("#result").text("Issa tie");
+    }else if ($("#userChoice").text() === "paper" && $("#computerChoice").text() === "rock") {
         $(".rockLosesPaper").show();
         $("#result").text("You win");
+    }else if($("#userChoice").text() === "scissors" && $("#computerChoice").text() === "paper"){
+        $(".scissorsBeatsPaper").show();
+        $("#result").text("You win");
+    }else if($("#userChoice").text() === "scissors" && $("#computerChoice").text() === "scissors"){
+        $(".scissorsTie").show();
+        $("#result").text("Issa tie");
+    }else if($("#userChoice").text() === "scissors" && $("#computerChoice").text() === "rock"){
+        $(".rockBeatsScissors").show();
+        $("#result").text("You lose");
     }
 });
 
